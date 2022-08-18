@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
+mongoose.Promise = global.Promise;
 
 const userSchema = new mongoose.Schema({
     name: { type: String },
@@ -10,4 +11,4 @@ const userSchema = new mongoose.Schema({
 },
 { collection : 'users' });
 
-module.exports = mongoose.model("users", userSchema);
+module.exports = mongoose.models.users || mongoose.model("users", userSchema);

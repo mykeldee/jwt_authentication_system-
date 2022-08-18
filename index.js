@@ -1,8 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const { json } = require("express");
-const flights = require("./controllers/flightController");
-const models = require("./models/Flight");
 const routes = require("./routes/userRoute");
 const { MONGO_URI } = process.env;
 

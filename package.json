@@ -1,14 +1,17 @@
 {
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "check-password-strength": "^2.0.7",
     "dotenv": "^16.0.1",
+    "email-validator": "^2.0.4",
     "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.5.2",
     "nodemon": "^2.0.19"
   },
   "name": "jwt_authentication_system-",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "start": "nodemon index.js"
   },
@@ -22,5 +25,8 @@
     "url": "https://github.com/mykeldee/jwt_authentication_system-/issues"
   },
   "homepage": "https://github.com/mykeldee/jwt_authentication_system-#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2"
+  }
 }
